@@ -20,4 +20,8 @@ def raise_pow_num(base, pow_num):
         result = base * result
     return result
 
-print(raise_pow_num(3, 2))
+# print(raise_pow_num(3, 2))
+
+def simple(number):
+    number * 2
+print(simple(10))
