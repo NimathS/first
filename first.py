@@ -25,4 +25,22 @@ def raise_pow_num(base, pow_num):
 def simple(number):
     return number * 2
 
-print(simple(10))
+# print(simple(10))
+
+my_name = "Sana"
+guess = ""
+guess_count = 0
+guess_limit = 5
+out_of_guesses = False
+
+while guess != my_name and not(out_of_guesses):
+    if guess_count < guess_limit:
+        guess = input("Enter my name: ")
+        guess_count += 1
+    else:
+        out_of_guesses = True
+
+if out_of_guesses:
+    print("Try again")
+else:
+    print("Yes! You win!")
